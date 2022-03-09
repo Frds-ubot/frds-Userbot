@@ -131,7 +131,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'IndomieUserbot` \n" % (duration)
+        f"**➾Branch : ** 'frds-Userbot` \n" % (duration)
     )
 
 
