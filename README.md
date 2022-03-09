@@ -1,26 +1,26 @@
 
-<h1 align="center"><img src="./resources/extras/Indomiepurple.gif" width="35px">𝕴𝖓𝖉𝖔𝖒𝖎𝖊𝖀𝖘𝖊𝖗𝖇𝖔𝖙<img src="./resources/extras/Indomiepurple.gif" width="35px"></h1>
+<h1 align="center">𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓<img src="./resources/extras/Indomiepurple.gif" width="35px"><img src="./resources/extras/Indomiepurple.gif" width="35px"></h1>
 
 <p align="center">
-    <a href="https://github.com/indomiegorengsatu/IndomieUserbot/commits/IndomieUserbot"><img src="https://img.shields.io/github/last-commit/indomiegorengsatu/IndomieUserbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
+    <a href="https://github.com/Frds-ubot/Frds-userbot/commits/frds-Userbot"><img src="https://img.shields.io/github/last-commit/Frds-ubot/Frds-Userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor"/>
     </p>
 
 
 <p align="center">
-  <a href="https://github.com/IndomieGorengSatu/IndomieUserbot/fork">
+  <a href="https://github.com/frds-ubot/Frds-Userbot/fork">
     <img src="https://img.shields.io/github/forks/IndomieGorengSatu/IndomieUserbot?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/IndomieGorengSatu/IndomieUserbot">
-    <img src="https://img.shields.io/github/stars/IndomieGorengSatu/IndomieUserbot?style=social">
+  <a href="https://github.com/Frds-ubot/Frds-Userbot">
+    <img src="https://img.shields.io/github/stars/Frds-Ubot/Frds-Userbot?style=social">
   </a>
 </p>  
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png">
+  <img src="https://telegra.ph/file/f17e029249a79d54b3563.jpg">
 </p>
 
 
@@ -36,22 +36,22 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
    Metode Deploy
 </h2>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/indomiegorengsatu/IndomieUserbot"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku" target="_blank""/</a>  
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Frds-ubot/Frds-Userbot "><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku" target="_blank""/</a>  
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=JiRsb25nIDIwMDkw"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-pink?style=for-the-badge&logo=telegram"width="200""/</a> </p> 
 
 
 ## Support & Updates 
-<a href="https://t.me/IndomieStore"><img src="https://img.shields.io/badge/Join-Channel%20Store-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/IndomieProject"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/frdssupport"><img src="https://img.shields.io/badge/Join-Channel%20Store-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/firdausnation"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 ## ❤️Follow Me :
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
-    <a href="https://t.me/indomiestore" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://t.me/indomieproject" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://instagram.com/w1thmyluv" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
+    <a href="https://t.me/Frds-ubot" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/Frds-userbot" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://https://instagram.com/sansz_tuyy" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -78,8 +78,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ## © Credits
 
 🏆 **THANKS TO**
-*   [Indomie](https://github.com/IndomieGorengSatu)    :  IndomieUserbot
-*   [Kyy](https://github.com/muhammadrizky16) :  Kyy - Userbot
+*   [Indomie](https://github.com/Frds-ubot)    :  IndomieUserboIndomieUsIndomieUserboIndomi
+*   [Kyy](https://github.com/muhammadrizky16) : frds-ubot-Frds-Userbot
 *   [Sendi](https://github.com/SendiAp)       :  Rose-Userbot
 *   [Pocong](https://github.com/poocong)      :  Pocong Userbot
 *   [Risman](https://github.com/mrismanaziz)  :  Man-Userbot  
