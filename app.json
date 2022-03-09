@@ -1,7 +1,7 @@
 {
-  "name": "IndomieUserbot",
-  "description": "[IndomieUserbot] USERBOT YANG DIGUNAKAN UNTUK ORANG CAPER DAN MENEBAR PESONA HEKER DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
+  "name": "frds-Userbot",
+  "description": "[Frds-Userbot] USERBOT YANG DIGUNAKAN UNTUK ORANG CAPER DAN MENEBAR PESONA HEKER DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/f17e029249a79d54b3563.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/indomiegorengsatu/IndomieUserbot/IndomieUserbot",
-  "telegram": "https://t.me/IndomieGenetik",
-  "success_url": "https://t.me/mukalokayabab1",
+  "repository": "https://github.com/Frds-ubot/Frds-Userbot",
+  "telegram": "https://t.me/IdNyaZonk",
+  "success_url": "https://t.me/frdssupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -24,7 +24,7 @@
     },
     "ALIVE_LOGO": {
       "description": "Gambar dalam module .alive",
-      "value": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
+      "value": "https://telegra.ph/file/f17e029249a79d54b3563.jpg",
       "required": false
     },
      "STRING_SESSION": {
