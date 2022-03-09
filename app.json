@@ -1,0 +1,135 @@
+{
+  "name": "IndomieUserbot",
+  "description": "[IndomieUserbot] USERBOT YANG DIGUNAKAN UNTUK ORANG CAPER DAN MENEBAR PESONA HEKER DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/indomiegorengsatu/IndomieUserbot/IndomieUserbot",
+  "telegram": "https://t.me/IndomieGenetik",
+  "success_url": "https://t.me/mukalokayabab1",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan Api Key di web my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan Api Hash Di Web my.telegram.org",
+      "required": true
+    },
+    "ALIVE_LOGO": {
+      "description": "Gambar dalam module .alive",
+      "value": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
+      "required": false
+    },
+     "STRING_SESSION": {
+      "description": "Dapatkan String Session di repl.it caranya ada di repo, jika tidak tau reponya tanya ke bapakmu coba",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
+      "value": "Check Di Heroku Dashboard Mu",
+      "required": true
+    },
+    "TZ_NUMBER": {
+      "description": "Change this value in case your country has multiple Time Zones.",
+      "value": "1",
+      "required": false
+    },
+    "BOTLOG": {
+      "description": "Ini adalah notif BOT, Kalo Mau Off in BOTLOG Ganti False",
+      "value": "True",
+      "required": true
+    },
+    "BOTLOG_CHATID": {
+      "description": "Bikin Grup Publik Lalu Invite Bot @MissRose_Bot Ke Grup Lo, Trus Ketik /id. Ntr bakal muncul ID seperti ini Contoh : -1001681347xxx",
+      "required": true
+    },
+    "G_BAN_LOGGER_GROUP": {
+      "description": "Bikin Grup Publik Lalu Invite Bot @MissRose_Bot Ke Grup Lo, Trus Ketik /id. Ntr bakal muncul ID seperti ini Contoh : -1001681347xxx",
+      "required": true
+    },
+    "HEROKU_MEMEZ": {
+      "description": "This should be True if the userbot is running on a Heroku Dyno.",
+      "value": "True",
+      "required": true
+    },
+    "DEFAULT_BIO": {
+      "description": "Default Bio Mu.",
+      "value": "pornhub.com",
+      "required": false
+    },
+    "PM_AUTO_BAN": {
+      "description": "Bot yang menjaga PC/Room chat kamu, ubah True untuk mengaktifkannya.",
+      "value": "False",
+      "required": true
+    },
+    "LOGSPAMMER": {
+      "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+      "value": "True",
+      "required": true
+    },
+    "ALIVE_NAME": {
+      "description": "Nama untuk menunjukan pesan .alive",
+      "required": true
+    },
+    "S_PACK_NAME": {
+      "description": "Nama Sticker Pack lo",
+      "required": false
+    },
+    "CLEAN_WELCOME": {
+      "description": "When a new person joins, the old welcome message is deleted.",
+      "value": "True"
+    },
+    "TMP_DOWNLOAD_DIRECTORY": {
+      "description": "Download location for many modules (GDrive, .download etc..)",
+      "value": "./downloads/"
+    },
+    "WEATHER_DEFCITY": {
+      "description": "Set the default city for the userbot's weather module.",
+      "value": "Jakarta",
+      "required": false
+    },
+    "BOT_TOKEN": {
+      "description": "Isi bot tokennya tolol. dapetin tokennya di @BotFather",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Username Bot lo Di @BotFather, Tanpa @",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],"buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-redis"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+  }, {
+    "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab"
+  },{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "https://github.com/amivin/aria2-heroku"
+  }, {
+    "url": "https://github.com/stevo550/buildpack-slug-cleaner"
+  }]
+}
