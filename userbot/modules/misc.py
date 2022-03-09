@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/indomiegorengsatu/IndomieUserbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Frds-ubot/Frds-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Menonaktifkan IndomieUserbot....`")
+    await event.edit("`Menonaktifkan Frds-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,7 +70,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting IndomieUserbot...`")
+    await event.edit("`Restarting Frds-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -87,10 +87,10 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "**Hai Bego, Gue Make** `[ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ]` **Nichhh**\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
-        f"┌ **Repo Userbot   :** [ɢɪᴛʜᴜʙ](https://github.com/indomiegorengsatu/IndomieUserbot)\n"
-        f"├ **Owner Repo     :** [ɪɴᴅᴏᴍɪᴇ](t.me/IndomieGenetik)\n"
-        f"├ **Support              :** [sᴜᴘᴘᴏʀᴛ](https://t.me/IndomieProject)\n"
-        f"└ **Store                    :** [Store](https://t.me/IndomieStore)\n"
+        f"┌ **Repo Userbot   :** [ɢɪᴛʜᴜ](https://github.com/frds-ubot/Frds-Userbot)\n"
+        f"├ **Owner Repo     :** [Ꭾʀᴇꜱɪ͠ᴅᴇɴᴛ||Fʀᴅs](t.me/IdNyaZonk)\n"
+        f"├ **Support              :** [support](https://t.me/Frdssupport)\n"
+        f"└ **Store                    :** [Store](https://t.me/firdausnation)\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
     )
 
@@ -99,7 +99,7 @@ async def repo_is_here(wannasee):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[Indomie Userbot Repo](https://github.com/indomiegorengsatu/IndomieUserbot/blob/IndomieUserbot/README.md)"
+        "\n[Indomie Userbot Repo](https://github.com/frds-ubot/frds-userbot/blob/frds-userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -123,10 +123,10 @@ async def owner_information(owner):
     await owner.edit(
         "**Semua sosmed pemilik repo ini**\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
-        f"┌ **Github                :** [ɢɪᴛʜᴜʙ](https://github.com/indomiegorengsatu)\n"
-        f"├ **Telegram           :** [ɪɴᴅᴏᴍɪᴇ](t.me/IndomieGenetik)\n"
-        f"├ **Instagram         :** [Instagram](https://www.instagram.com/w1thmyluv)\n"
-        f"└ **Store                   :** [Store](https://t.me/IndomieStore)\n"
+        f"┌ **Github                :** [ɢɪᴛʜᴜʙ](https://github.com/frds-ubot)\n"
+        f"├ **Telegram           :** [Ꭾʀᴇꜱɪ͠ᴅᴇɴᴛ||Fʀᴅs p](t.me/IdNyaZonk)\n"
+        f"├ **Instagram         :** [Instagram](https://instagram.com/sansz_tuyy)\n"
+        f"└ **support                   :** [support](https://t.me/frdssupport)\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
     )
 
