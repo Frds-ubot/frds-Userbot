@@ -43,7 +43,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## Support & Updates 
-<a href="https://t.me/frdssupport"><img src="https://img.shields.io/badge/Join-Channel%20Store-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/firdausnation"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/frdssupport"><img src="https://img.shields.io/badge/Join-Support%20-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/firdausnation"><img src="https://img.shields.io/badge/Join-Channel%20-white.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 ## ❤️Follow Me :
