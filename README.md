@@ -50,8 +50,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
-    <a href="https://t.me/Frds-ubot" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://t.me/Frds-userbot" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/IdNyaZonk" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/firdausnation" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
     <a href="https://https://instagram.com/sansz_tuyy" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
