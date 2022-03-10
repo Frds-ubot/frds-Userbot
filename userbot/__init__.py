@@ -678,7 +678,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Gue Adalah Indomie Userbot Yang Hanya Dipake Untuk Caper Oleh User Tele__.\n\n"
+                    f"❁ __Gue Adalah Frds-Userbot Yang Hanya Dipake Untuk Caper Oleh User Tele__.\n\n"
                     f"❁ __Gue Dibikin Dengan Air kental Yang Dinamakan Sperma__.\n\n"
                     f"❁ __Gausa Banyak Nanya, Gue Hanya Punya 1816 Commands__.\n\n"
                     f"© @IdNyaZonk")
