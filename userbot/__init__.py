@@ -133,9 +133,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/indomiegorengsatu/IndomieUserbot")
+    "https://github.com/Frds-Ubot/Frds-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "IndomieUserbot")
+    "UPSTREAM_REPO_BRANCH", "Indomie userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -208,7 +208,7 @@ YOUTUBE_API_KEY = os.environ.get(
 # Untuk Perintah .realive
 RE_TEKS_KUSTOM = os.environ.get(
     "RE_TEKS_KUSTOM",
-    "[Userbot](https://github.com/indomiegorengsatu/IndomieUserbot) kece ni bosh, senggol dong")
+    "[Userbot](https://github.com/Frds-ubot/Frds-Userbot) kece ni bosh, senggol dong")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -231,7 +231,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "IndomieUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Frds-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "8.2")
@@ -357,7 +357,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "IndomieUserBot"
+    session = "Frds-Userbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -390,7 +390,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Support Channel @IndomieProject to see the updates of userbot"
+            "Join Support Channel @Frdssupport to see the updates of userbot"
             "Do not Leave!")
         quit(1)
 
@@ -430,7 +430,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**IndomieUserbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **sᴜᴘᴘᴏʀᴛ​ :** @IndomieProject\n✦ **Store​ :** @IndomieStore \n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Frds-Userbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **sᴜᴘᴘᴏʀᴛ​ :** @IndomieProject\n✦ **Store​ :** @IndomieStore \n━━━━━━━━━━━━━━━━━━━")
     return
 
 with bot:
@@ -463,7 +463,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**💀IndomieUserbot💀 v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**💀Frds-Userbot💀 v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -563,7 +563,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Indomieuserbot")
+                    results = await event.client.inline_query(tgbotusername, "@frdsuserbot")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -598,555 +598,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("ʀᴇᴘᴏ​",
-                                       "https://github.com/indomiegorengsatu/IndomieUserbot")],
+                                       "https://github.com/Frds-Ubot/Frds-Userbot")],
                     ]
                 )
 
 # ====================================InlineHandler===================================== #
 
-        @tgbot.on(events.NewMessage(pattern="/start"))
-        async def handler(event):
-            if event.message.from_id != uid:
-                await event.client.get_entity(event.chat_id)
-                await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @IndomieGenetik\n\n",
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ꜱᴇᴛᴛɪɴɢꜱ", data="settings"),
-                            custom.Button.inline(
-                                "ɪɴꜰᴏ", data="about")],
-                        [custom.Button.inline("ᴍᴇɴᴜ", data="kanan")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌!WARNING!❌ Jangan Make Punya {DEFAULTUSER} Tolol."
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(events.NewMessage(pattern="/ping"))
-        async def handler(event):
-            if event.message.from_id != uid:
-                start = datetime.now()
-                end = datetime.now()
-                ms = (end - start).microseconds / 1000
-                await tgbot.send_message(
-                    event.chat_id,
-                    f"**PONG!!**\n `{ms}ms`",
-                )
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(f"open_plugin")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            event.builder
-            query = event.text
-            if event.query.user_id == uid and query.startswith(
-                    "@IndomieGenetik"):
-                buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 1.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛ :** @{BOT_USERNAME} "
-                await event.edit(text,
-                                 file=relogo,
-                                 buttons=buttons,
-                                 link_preview=False,
-                                 )
-
-            else:
-                reply_pop_up_alert = f"❌ WARNINGS ❌\n\nLo Siapa Kontol."
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"nepo")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            current_page_number = int(lockpage)
-            buttons = paginate_help(current_page_number, plugins, "helpme")
-            await event.edit(
-                file=relogo,
-                buttons=buttons,
-                link_preview=False,
-            )
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"about")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"❁ __Gue Adalah Indomie Userbot Yang Hanya Dipake Untuk Caper Oleh User Tele__.\n\n"
-                    f"❁ __Gue Dibikin Dengan Air kental Yang Dinamakan Sperma__.\n\n"
-                    f"❁ __Gausa Banyak Nanya, Gue Hanya Punya 1816 Commands__.\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=kyylogo,
-                    link_preview=True,
-                    buttons=[
-                        [custom.Button.inline("ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 1.0\n🛠 Modules : {len(plugins)}\n∞ Branch : IndomieUserbot"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"settings")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"{DEFAULTUSER}Pilih dari opsi di bawah ini :")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [custom.Button.inline("ᴀʟɪᴠᴇ", data="alive")],
-                        [custom.Button.inline("ᴘᴍᴘᴇʀᴍɪᴛ", data="permirt")],
-                        [custom.Button.inline("ᴘᴍʙᴏᴛ", data="pmbot")],
-                        [custom.Button.inline(
-                            "ɪɴʟɪɴᴇ ᴍᴏᴅᴇ ", data="inline_mode")],
-                        [custom.Button.inline("ᴍᴇɴᴜ", data="kanan")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"kanan")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Menu Lainnya ! Untuk {DEFAULTUSER}")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [custom.Button.inline("ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
-                        [custom.Button.inline("ᴘɪɴɢ", data="ping")],
-                        [custom.Button.inline("ᴄᴇᴋ ᴅʏɴᴏ", data="restart_bot")],
-                        [custom.Button.inline("<<ʟᴇꜰᴛ", data="settings")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"alive")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Modules Name **Alive**\n\n"
-                    f"× `.alive` × `.realive` × `.reon`\n"
-                    f"°__Menampilkan Alive Punya Bapakmu__.\n\n"
-                    f"× `.set var ALIVE_LOGO` [**LINK**]\n"
-                    f"°__Mengubah Foto Alive Bapakmu, Yang Kamu Inginkan__.\n\n"
-                    f"× `.set var RE_TEKS_KUSTOM` [**TEKS**]\n"
-                    f"°__Mengganti Teks Yang Ada Command ReAlive__.\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="settings"),
-                            custom.Button.inline(
-                                "ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"permirt")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Modules Name **pmpermit**\n\n"
-                    f"× `.set var PM_AUTO_BAN True`\n"
-                    f"°__Mengaktifkan Pmpermitmu Atau Disebut Pesan Otomatis__.\n\n"
-                    f"× `.set pm_msg` [**REPLYCHAT**]\n"
-                    f"°__Mengganti Teks Pmpermit Gimana Yang Lo Mau__.\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="settings"),
-                            custom.Button.inline(
-                                "ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"inline_mode")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Modules Name **inline**\n\n"
-                    f"× `.set var EMOJI_HELP` [**EMOJI**]\n"
-                    f"°__Mengubah Emoji Inline Yang Ada Dicommand__ `.helpme`\n\n"
-                    f"× `.set var INLINE_PIC` [**LINK**]\n"
-                    f"°__Mengubah Foto Yang Ada Dicommand__ `.helpme`\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="settings"),
-                            custom.Button.inline(
-                                "ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"pmbot")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Modules Name **pmbot**\n\n"
-                    f"× `.set var START_WELCOME` [**TEKS**] \n"
-                    f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="settings"),
-                            custom.Button.inline(
-                                "ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"pembaruan")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Modules Name **Update**\n\n"
-                    f"× **Apdet Data Untuk Indomie Userbot, Command Untuk Update**.\n"
-                    f"⚒Apdet Data :\n"
-                    f"`.update deploy`\n"
-                    f"`update`\n\n"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="kanan"),
-                            custom.Button.inline(
-                                "ᴄʟᴏꜱᴇ", data="closed")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"ping")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                start = datetime.now()
-                end = datetime.now()
-                ms = (end - start).microseconds / 1000
-                text = (
-                    f"**PONG!!**\n `{ms}ms`")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="kanan")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"PONG!!\n `{ms}ms`"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"dyno_usage")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if apps.get('app_uuid') == app.id:
-                apps.get('quota_used') / 60
-                AppPercentage = math.floor(
-                    apps.get('quota_used') * 100 / quota)
-                text = (
-                    "∞ **ɪɴꜰᴏʀᴍᴀsɪ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ :**\n"
-                    "╔════════════════════╗\n"
-                    f" ☂ **ᴘᴇɴɢɢᴜɴᴀ ᴅʏɴᴏ sᴀᴀᴛ ɪɴɪ :**\n"
-                    f"  ➽  `{AppHours}`**ᴊᴀᴍ**  `{AppMinutes}`**ᴍᴇɴɪᴛ**\n"
-                    f"**|**  [`{AppPercentage}`**%**]\n"
-                    "\n◖════════════════════◗\n"
-                    " ☂ **sɪsᴀ ᴋᴏᴜᴛᴀ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ :**\n"
-                    f"  ➽  `{hours}`**ᴊᴀᴍ**  `{minutes}`**ᴍᴇɴɪᴛ**\n"
-                    f"**|**  [`{percentage}`**%**]\n"
-                    f" ✠➲ ʙᴏᴛ ᴏꜰ : [**{ALIVE_NAME}**]\n"
-                    "\n╚════════════════════╝"
-                    f"© @IndomieGenetik")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="kanan")],
-                    ]
-                )
-            else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nLo Siapa Kontol"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"restart_bot")
-            )
-        )
-        async def killdabot(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"**Restaring IndomieUserbot**...")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            custom.Button.inline(
-                                "ʙᴀᴄᴋ", data="kanan")],
-                    ]
-                )
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"closed")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:
-                text = (
-                    f"Closed Menu!")
-                await event.edit(
-                    text,
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/IndomieStore")],
-                    ]
-                )
-
-        @ tgbot.on(events.InlineQuery)  # pylint:disable=E0602
-        async def inline_handler(event):
-            builder = event.builder
-            result = None
-            query = event.text
-            if event.query.user_id == uid and query.startswith(
-                    ""):
-                buttons = paginate_help(0, dugmeler, "helpme")
-                result = builder.photo(
-                    file=relogo,
-                    link_preview=False,
-                    text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 1.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛ :** @{BOT_USERNAME}".format(
-                        len(dugmeler),
-                    ),
-                    buttons=buttons,
-                )
-            elif query.startswith("tb_btn"):
-                result = builder.article(
-                    "Help From ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ♨",
-                    text="Daftar Plugins",
-                    buttons=[],
-                    link_preview=True)
-            else:
-                result = builder.article(
-                    " ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ♨",
-                    text="""°IndomieUserbot°""",
-                    buttons=[
-                        [
-                            custom.Button.url(
-                                "Indomie",
-                                "https://github.com/indomiegorengsatu/IndomieUserbot"),
-
-                            custom.Button.url(
-                                "Channel",
-                                "t.me/IndomieStore")],
-                        [custom.Button.url(
-                            "License",
-                            "https://raw.githubusercontent.com/IndomieGorengSatu/IndomieUserbot/IndomieUserbot/LICENSE")],
-                    ],
-                    link_preview=False,
-                )
-            await event.answer([result] if result else None)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_next\((.+?)\)")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # pylint:disable=E0602
-                current_page_number = int(
-                    event.data_match.group(1).decode("UTF-8"))
-                buttons = paginate_help(
-                    current_page_number + 1, dugmeler, "helpme")
-                # https://t.me/TelethonChat/115200
-                await event.edit(buttons=buttons)
-            else:
-                reply_pop_up_alert = f"❌!WARNING!❌ Jangan Make Punya {DEFAULTUSER} Goblok."
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_close\((.+?)\)")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # userbot
-                # https://t.me/TelethonChat/115200
-                await event.edit(
-                    file=relogo,
-                    link_preview=True,
-                    buttons=[
-                        [
-                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
-                                       "t.me/IndomieProject"),
-                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
-                                       "t.me/IndomieStore")],
-                        [custom.Button.inline(
-                            "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
-                        [custom.Button.inline(
-                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", b"close")],
-                    ]
-                )
-
-        @ tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            buttons = [
-                (custom.Button.inline("Open Menu", data="open_plugin"),),
-            ]
-            await event.edit(f"Menu Ditutup! ", buttons=buttons)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_prev\((.+?)\)")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # pylint:disable=E0602
-                current_page_number = int(
-                    event.data_match.group(1).decode("UTF-8"))
-                buttons = paginate_help(
-                    current_page_number - 1, dugmeler, "helpme"  # pylint:disable=E0602
-                )
-                # https://t.me/TelethonChat/115200
-                await event.edit(buttons=buttons)
-            else:
-                reply_pop_up_alert = f"❌!WARNING!❌ Jangan Make Punya {DEFAULTUSER} Goblok."
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-        @ tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"ub_modul_(.*)")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # pylint:disable=E0602
-                modul_name = event.data_match.group(1).decode("UTF-8")
-
-                cmdhel = str(CMD_HELP[modul_name])
-                if len(cmdhel) > 180:
-                    help_string = (
-                        str(CMD_HELP[modul_name]).replace(
-                            '`', '')[:180] + "..."
-                        + "\n\nBaca Text Berikutnya Ketik .help "
-                        + modul_name
-                        + " "
-                    )
-                else:
-                    help_string = str(CMD_HELP[modul_name]).replace('`', '')
-
-                reply_pop_up_alert = (
-                    help_string
-                    if help_string is not None
-                    else "{} No document has been written for module.".format(
-                        modul_name
-                    )
-                )
-            else:
-                reply_pop_up_alert = f"❌!WARNING!❌ Jangan Make Punya {DEFAULTUSER} Goblok."
-
-            await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
-    except BaseException:
-        LOGS.info(
-            "Mode Inline Bot Mu Nonaktif. "
-            "Untuk Mengaktifkannya, Silahkan Pergi Ke @BotFather, Settings Bot > Pilih Mode Inline > Turn On. ")
-    try:
-        bot.loop.run_until_complete(check_botlog_chatid())
-    except BaseException:
-        LOGS.info(
-            "BOTLOG_CHATID Environment Variable Isn't a "
-            "Valid Entity. Please Check Your Environment variables/config.env File.")
-        quit(1)
