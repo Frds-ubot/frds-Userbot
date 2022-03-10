@@ -1,5 +1,6 @@
 
-<h1 align="center"<img src="./resources/extras/Indomiepurple.gif" width="35px">𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓<img src="./resources/extras/Indomiepurple.gif" width="35px"></h1>
+
+<h1 align="center"><img src="./resources/extras/Indomiepurple.gif" width="35px">𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓<img src="./resources/extras/Indomiepurple.gif" width="35px"></h1>
 
 <p align="center">
     <a href="https://github.com/Frds-ubot/Frds-userbot/commits/frds-Userbot"><img src="https://img.shields.io/github/last-commit/Frds-ubot/Frds-Userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
