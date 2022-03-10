@@ -240,13 +240,14 @@ async def amireallyalive(alive):
         f"├ `Modules    :` {len(modules)} \n"
         f"├ `Uptime     :` {uptime} \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ꜱᴛᴏʀᴇ](https://t.me/IndomieStore) | [ᴄʜᴀɴɴᴇʟ](https://t.me/IndomieProject) | [ᴏᴡɴᴇʀ](https://t.me/IndomieGenetik) | [ɢɪᴛʜᴜʙ](https://github.com/indomiegorengsatu)")
+        f"[OWNER](https://t.me/frdssupport) | [support](https://t.me/frdssupport) | [ᴏᴡɴᴇʀ](https://t.me/frds-userbot) | [ɢɪᴛʜᴜʙ](https://github.com/frds-ubot)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(200)
+
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -275,7 +276,7 @@ async def redis(alive):
     await alive.edit("✨")
     await asyncio.sleep(2)
     output = (
-        f"**[Indomie Userbot](https://github.com/indomiegorengsatu/IndomieUserbot) Siap digunakan.**\n\n"
+        f"**[frds-Userbot](https://github.com/frds-ubot/frds-userbot) Siap digunakan.**\n\n"
         f"┌  `Name     :` [{user.first_name}](tg://user?id={user.id}) \n"
         f"├  `Telethon :` Ver {version.__version__} \n"
         f"├  `Python   :` Ver {python_version()} \n"
@@ -283,9 +284,9 @@ async def redis(alive):
         f"├  `Bot Ver  :` {BOT_VER} \n"
         f"├  `Modules  :` {len(modules)} Modules \n"
         f"├  `Uptime   :` {uptime} \n"
-        f"├  `Support  :` [Indomie Project](https://t.me/IndomieProject) \n"
-        f"└  `Owner    :` [𝐈𝐧𝐝𝐨𝐦𝐢𝐞](https://t.me/IndomieGenetik) \n"
-        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/IndomieProject)** | **[𝗦𝘁𝗼𝗿𝗲](https://t.me/IndomieStore)** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**")
+        f"├  `Support  :` [frds support](https://t.me/frdssupport) \n"
+        f"└  `Owner    :` [Ꭾʀᴇꜱɪ͠ᴅᴇɴᴛ || Fʀᴅs](https://t.me/IdNyaZonk) \n"
+        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/frdssupport)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/firdausnation)** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
