@@ -3,12 +3,12 @@
 FROM vckyouuu/geezproject:buster
 
 
-RUN git clone -b Frds-Userbot https://github.com/Frds-Ubot/Frds-Userbot /root/userbot
+RUN git clone -b Frds-Userbot https://github.com/frds-Userbot/Frds-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/frds-Userbot/frds-Userbot/frds-Userbot/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/frds-Userbot/Frds-Userbot/Frds-Userbot/requirements.txt
 
 CMD ["python3", "-m", "userbot"]
