@@ -33,7 +33,7 @@ async def help(indomie):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`\t ✦  "
-        await indomie.edit(f"**♨ List Help [ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ](https://github.com/indomiegorengsatu/IndomieUserbot):**\n\n"
+        await indomie.edit(f"**♨ List Help [𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓](https://github.com/frds-ubot/Frds-Userbot):**\n\n"
                            f"**♨ ʙᴏᴛ ᴏᴡɴᴇʀ {DEFAULTUSER}**\n**♨ Mᴏᴅᴜʟᴇꜱ : {len(modules)}**\n\n"
                            "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
                            f"✦ {string}✦\n\n")
