@@ -133,9 +133,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/indomiegorengsatu/IndomieUserbot")
+    "https://github.com/Frds-Ubot/Frds-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "IndomieUserbot")
+    "UPSTREAM_REPO_BRANCH", "IndomiUserbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -208,7 +208,7 @@ YOUTUBE_API_KEY = os.environ.get(
 # Untuk Perintah .realive
 RE_TEKS_KUSTOM = os.environ.get(
     "RE_TEKS_KUSTOM",
-    "[Userbot](https://github.com/indomiegorengsatu/IndomieUserbot) kece ni bosh, senggol dong")
+    "[Userbot](https://github.com/Frds-Ubot/Frds-Userbot) kece ni bosh, senggol dong")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -231,7 +231,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "IndomieUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Frds-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "8.2")
@@ -390,7 +390,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Support Channel @IndomieProject to see the updates of userbot"
+            "Join Support Channel @firdausnation to see the updates of userbot"
             "Do not Leave!")
         quit(1)
 
@@ -430,7 +430,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**IndomieUserbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **sᴜᴘᴘᴏʀᴛ​ :** @IndomieProject\n✦ **Store​ :** @IndomieStore \n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Frds-Userbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **sᴜᴘᴘᴏʀᴛ​ :** @IndomieProject\n✦ **Store​ :** @IndomieStore \n━━━━━━━━━━━━━━━━━━━")
     return
 
 with bot:
@@ -463,7 +463,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**💀IndomieUserbot💀 v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**💀Frds-Userbot💀 v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -563,7 +563,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Indomieuserbot")
+                    results = await event.client.inline_query(tgbotusername, "@IdNyaZonk")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -598,7 +598,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ʀᴇᴘᴏ​",
-                                       "https://github.com/indomiegorengsatu/IndomieUserbot")],
+                                       "https://github.com/Frds-Ubot/Frds-Userbot")],
                     ]
                 )
 
