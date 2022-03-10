@@ -430,7 +430,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Frds-Userbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **sᴜᴘᴘᴏʀᴛ​ :** @IndomieProject\n✦ **Store​ :** @IndomieStore \n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Frds-Userbot Berhasil Diaktifkan ♨**\n━━━━━━━━━━━━━━━━━━━\n✦ **ʙᴏᴛ ᴏꜰ :** `{ALIVE_NAME}`\n✦ **ʙᴏᴛ ᴠᴇʀ :** `8.2`\n━━━━━━━━━━━━━━━━━━━\n✦ **support​ :** @Frdssupport\n✦ *Channel :** @Firdausnation \n━━━━━━━━━━━━━━━━━━━")
     return
 
 with bot:
@@ -609,7 +609,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @IndomieGenetik\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @IdNyaZonk\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -643,7 +643,7 @@ with bot:
             event.builder
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@IndomieGenetik"):
+                    "@IdNyaZonk"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 text = f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 1.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛ :** @{BOT_USERNAME} "
                 await event.edit(text,
@@ -681,7 +681,7 @@ with bot:
                     f"❁ __Gue Adalah Indomie Userbot Yang Hanya Dipake Untuk Caper Oleh User Tele__.\n\n"
                     f"❁ __Gue Dibikin Dengan Air kental Yang Dinamakan Sperma__.\n\n"
                     f"❁ __Gausa Banyak Nanya, Gue Hanya Punya 1816 Commands__.\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -759,7 +759,7 @@ with bot:
                     f"°__Mengubah Foto Alive Bapakmu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var RE_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command ReAlive__.\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -789,7 +789,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermitmu Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Gimana Yang Lo Mau__.\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -819,7 +819,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicommand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicommand__ `.helpme`\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -847,7 +847,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -873,11 +873,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Update**\n\n"
-                    f"× **Apdet Data Untuk Indomie Userbot, Command Untuk Update**.\n"
+                    f"× **Apdet Data Untuk Frds-Userbot, Command Untuk Update**.\n"
                     f"⚒Apdet Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -942,7 +942,7 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ ʙᴏᴛ ᴏꜰ : [**{ALIVE_NAME}**]\n"
                     "\n╚════════════════════╝"
-                    f"© @IndomieGenetik")
+                    f"© @IdNyaZonk")
                 await event.edit(
                     text,
                     file=relogo,
@@ -965,7 +965,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**Restaring IndomieUserbot**...")
+                    f"**Restaring Frds-Userbot**...")
                 await event.edit(
                     text,
                     file=relogo,
@@ -993,7 +993,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/IndomieStore")],
+                                       "t.me/frdssupport")],
                     ]
                 )
 
@@ -1022,19 +1022,19 @@ with bot:
             else:
                 result = builder.article(
                     " ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ♨",
-                    text="""°IndomieUserbot°""",
+                    text="""°Frds-Userbot°""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "Indomie",
-                                "https://github.com/indomiegorengsatu/IndomieUserbot"),
+                                "Frds",
+                                "https://github.com/Frds-ubot/Frds-Userbot"),
 
                             custom.Button.url(
                                 "Channel",
-                                "t.me/IndomieStore")],
+                                "t.me/firdausnation")],
                         [custom.Button.url(
                             "License",
-                            "https://raw.githubusercontent.com/IndomieGorengSatu/IndomieUserbot/IndomieUserbot/LICENSE")],
+                            "https://raw.githubusercontent.com/Frds-ubot/Frds-Userbot/Frds-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
@@ -1071,9 +1071,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
-                                       "t.me/IndomieProject"),
+                                       "t.me/firdausnation"),
                             Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
-                                       "t.me/IndomieStore")],
+                                       "t.me/Frdssupport")],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
                         [custom.Button.inline(
