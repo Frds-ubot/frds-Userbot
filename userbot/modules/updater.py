@@ -57,7 +57,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `"
-                " untuk dapat deploy perubahan terbaru dari ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ.`"
+                " untuk dapat deploy perubahan terbaru dari ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡`"
             )
             repo.__del__()
             return
@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy IndomieUserbot dyno.`"
+                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Frds-Userbot dyno.`"
             )
             return repo.__del__()
         await event.edit(
@@ -97,14 +97,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`IndomieUserbot Berhasil DiUpdate,Restart Tunggu Sebentar...`"
+                "`Frds-Userbot Berhasil DiUpdate,Restart Tunggu Sebentar Ya Todd...`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`IndomieUserbot Berhasil Di Update bre`"
+                BOTLOG_CHATID, "#BOT \n" "`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Berhasil Di Update bre`"
             )
 
     else:
@@ -122,9 +122,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit("**ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ** `Berhasil Di Update!`")
+    await event.edit("**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await event.edit("**ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ** `Di Restart....`")
+    await event.edit("**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡** `Di Restart....`")
     await asyncio.sleep(1)
     await event.edit("`Orang Sabar Disayang Tuhan, Klo G Sbrn G punya Tuhan.`")
     await asyncio.sleep(10)
@@ -132,7 +132,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ Berhasil Di Apdet mek.**"
+            BOTLOG_CHATID, "#BOT \n" "**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Berhasil Di Apdet mek.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -196,7 +196,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n`ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ` **Sudah Versi Terbaru Goblok!**\n"
+            f"\n`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡` **Sudah Versi Terbaru Goblok!**\n"
         )
         await asyncio.sleep(15)
         await event.delete()
@@ -204,7 +204,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ :\n\n🚀 Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡:\n\n🚀 Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Silakan Lihat File Untuk Melihatnya.`")
@@ -220,7 +220,7 @@ async def upstream(event):
         else:
             await event.edit(changelog_str)
         return await event.respond(
-            "**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ.__"
+            "**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡.__"
         )
 
     if force_update:
@@ -228,13 +228,13 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await event.edit("` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ, Loading....1%`")
-        await event.edit("` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ Loading....20%`")
-        await event.edit("` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ, Loading....35%`")
-        await event.edit("` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ, Loading....77%`")
-        await event.edit("` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ, Updating...90%`")
+        await event.edit("` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡, Loading....1%`")
+        await event.edit("` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Loading....20%`")
+        await event.edit("` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡, Loading....35%`")
+        await event.edit("` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡, Loading....77%`")
+        await event.edit("` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡, Updating...90%`")
         await event.edit(
-            "` Proses Update ♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
@@ -251,8 +251,8 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-        "\n• : Untuk Melihat Pembaruan Terbaru IndomieUserbot."
+        "\n• : Untuk Melihat Pembaruan Terbaru ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update deploy`"
-        "\n• : Memperbarui IndomieUserbot."
+        "\n• : Memperbarui ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡."
     }
 )
