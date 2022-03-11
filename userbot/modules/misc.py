@@ -85,12 +85,12 @@ async def killdabot(event):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡`\n"
+        "Gw Make Repo`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡`Senggol Dong\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
         f"┌ **Repo Userbot   :** [Github](https://github.com/frds-ubot/Frds-Userbot)\n"
         f"├ **Owner Repo     :** [Ꭾʀᴇꜱɪ͠ᴅᴇɴᴛ||Fʀᴅs](t.me/IdNyaZonk)\n"
-        f"├ **Support        :** [Support](https://t.me/Frdssupport)\n"
-        f"└ **Channel        :** [Channel](https://t.me/firdausnation)\n"
+        f"├ **Support           :** [Support](https://t.me/Frdssupport)\n"
+        f"└ **Channel           :** [Channel](https://t.me/firdausnation)\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
     )
 
