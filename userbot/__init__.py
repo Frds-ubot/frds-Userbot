@@ -71,12 +71,12 @@ if CONFIG_CHECK:
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/indomiegorengsatu/Mie/master/DEVS.json"
+        "https://raw.githubusercontent.com/Frds-ubot/Mie/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [1447438514, 1675900974, 2109507743, 1731365899]
+        DEVS = [1447438514, 1675900974, 2109507743]
         break
     DEVS = _DEVS.json()
     break
