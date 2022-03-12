@@ -71,7 +71,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` **Lagi di perbarui pler!**\n`Ga lama kok nyet, pling sehari doang awogawog.`"
+            "`Heroku :` **Lagi di perbarui bre**\n`Ga lama kok nyet, pling sehari doang awogawog.`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
