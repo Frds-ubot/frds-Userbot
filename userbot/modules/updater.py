@@ -67,11 +67,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Frds-Userbot dyno.`"
+                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy ⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡.`"
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` **Lagi di perbarui pler!**\n`Ga lama kok nyet, pling sejam doang xixi.`"
+            "`Heroku :` **Lagi di perbarui pler!**\n`Ga lama kok nyet, pling sehari doang awogawog.`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -97,7 +97,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`Frds-Userbot Berhasil DiUpdate,Restart Tunggu Sebentar Ya Todd...`"
+                "`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Berhasil DiUpdate,Masih Restart Tunggu Sebentar Ya Bro...`"
             )
             await asyncio.sleep(15)
             await event.delete()
@@ -132,7 +132,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Berhasil Di Apdet mek.**"
+            BOTLOG_CHATID, "#BOT \n" "**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ Berhasil Di Apdet Bro.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -196,7 +196,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡` **Sudah Versi Terbaru Goblok!**\n"
+            f"\n`⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡` **Sudah Versi Terbaru Bro..😎**\n"
         )
         await asyncio.sleep(15)
         await event.delete()
