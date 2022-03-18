@@ -40,13 +40,13 @@ brb = [
     "**Siap bang.**",
     "**Yah udah off aja bang.**",
     "**Off lagi, mau ngewe ya?**",
-    "**Bang indomie, lagi ange kah?**",
+    "**Bang frds, lagi ange kah?**",
     "**Jangan lupa makan bang.**",
     "**Yah pasti mao ngocok ni.**",
     "**Jangan off terus lah bang.**",
     "**Mau nonton bokep kah?**",
     "**Mau nonton lipshoe ya?**",
-    "**Bang Ganteng telah off.**",
+    "**Bang frds Ganteng telah off.**",
 ]
 
 
@@ -100,7 +100,13 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
+    await pong.edit(f"╼══❃⚡️**ꜰʀᴅꜱ-ᴜꜱᴇʀʙᴏᴛ**⚡️❃══╾ **\n\n"
+        f" ▹  Pɪɴɢᴇʀ  :  "
+        f"%sms \n"
+        f" ▹  Uᴘᴛɪᴍᴇ  :  "
+        f"{uptime} \n"
+        f" **▹  Oᴡɴᴇʀ   : ** `{ALIVE_NAME}` "
+    ) 
 
 
 @register(outgoing=True, pattern="^.pings$")
@@ -131,7 +137,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'frds-Userbot` \n" % (duration)
+        f"**➾Branch : ** 'Frds-Userbot` \n" % (duration)
     )
 
 
@@ -169,7 +175,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡**\n"
+        f"**⚡️**ꜰʀᴅꜱ-ᴜꜱᴇʀʙᴏᴛ**⚡️**\n"
         f"➾ __Signal__    __:__ "
         f"`%sms` \n"
         f"➾ __Uptime__ __:__ "
@@ -193,7 +199,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐅𝐑𝐃𝐒-𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡**\n\n"
+        f"**⚡️**ꜰʀᴅꜱ-ᴜꜱᴇʀʙᴏᴛ**⚡️**\n\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -227,7 +233,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "✧ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** ⚡𝐅𝐑𝐃𝐒 - 𝐔𝐒𝐄𝐑𝐁𝐎𝐓⚡ "
+        "✧ **BOT:** ⚡️**ꜰʀᴅꜱ-ᴜꜱᴇʀʙᴏᴛ**⚡️ "
     )
 
 
