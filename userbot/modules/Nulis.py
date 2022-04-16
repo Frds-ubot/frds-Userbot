@@ -10,6 +10,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
 from userbot.events import register
 
+
 @register(pattern="nulis(?: |$)(.*)")
 async def writer(event):
     if event.reply_to:
