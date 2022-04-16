@@ -36,9 +36,6 @@ async def writer(event):
     await k.delete()
 
 
-)
-
-
 CMD_HELP.update(
     {
         "nulis": f"**plugin : **`nulis`\
