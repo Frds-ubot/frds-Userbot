@@ -30,4 +30,5 @@ from .tools import (
     edit_delete,
     edit_or_reply,
     media_type,
+    text_set,
 )
