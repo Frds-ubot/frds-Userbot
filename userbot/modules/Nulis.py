@@ -20,9 +20,9 @@ async def writer(event):
     else:
         return await edit_delete(event, "Berikan Beberapa Teks")
     k = await edit_or_reply(event, "Sedang Memproses..")
-    img = Image.open("userbot/resources/kertas.jpg")
+    img = Image.open("userbot/files/kertas.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("userbot/resources/assfont.ttf", 30)
+    font = ImageFont.truetype("userbot/files/assfont.ttf", 30)
     x, y = 150, 140
     lines = text_set(text)
     line_height = font.getsize("hg")[1]
