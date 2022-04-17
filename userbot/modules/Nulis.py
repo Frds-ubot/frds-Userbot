@@ -5,7 +5,7 @@
 import os
 
 from PIL import Image, ImageDraw, ImageFont
-from userbot.utils import edit_or_reply, edit_delete, text_set
+from userbot.utils import text_set
 from userbot import CMD_HELP
 from userbot.events import register
 
@@ -18,8 +18,8 @@ async def writer(event):
     elif event.pattern_match.group(1).strip():
         text = event.text.split(maxsplit=1)[1]
     else:
-        return await edit_delete(event, "Berikan Beberapa Teks")
-    k = await edit_or_reply(event, "Sedang Memproses..")
+        return await event.edit("Berikan Beberapa Teks")
+    k = await event.edit("Sedang Memproses..")
     img = Image.open("userbot/files/kertas.jpg")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("userbot/files/assfont.ttf", 30)
