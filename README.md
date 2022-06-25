@@ -79,10 +79,11 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ## © Credits
 
 🏆 **THANKS TO**
-*   [Indomie](https://github.com/Frds-ubot)    :  IndomieUserboIndomieUsIndomieUserboIndomi
-*   [Kyy](https://github.com/muhammadrizky16) : frds-ubot-Frds-Userbot
+*   [Frds](https://github.com/Frds-ubot)    :  Frds-Userbot
+*   [Kyy](https://github.com/muhammadrizky16) : Kyy-Userbot
 *   [Sendi](https://github.com/SendiAp)       :  Rose-Userbot
 *   [Pocong](https://github.com/poocong)      :  Pocong Userbot
+*   [Indomie](https://github.com/IndomieGorengSatu)  : IndomieUserbot
 *   [Risman](https://github.com/mrismanaziz)  :  Man-Userbot  
 *   DAN TERIMAKASIH KEPADA USERBOT LAINNYA
 
